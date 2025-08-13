@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -20,8 +20,13 @@
   function changeTitle() {
     count++;
     document.getElementById("title").innerText = 
-      greeting + " You clicked " + count + " times.";
+      greeting + " You clicked " + count + " times.";  
   }
+
+   (function() {
+  console.log("Runs immediately!");
+})();
+ 
 </script>
 
 </body>

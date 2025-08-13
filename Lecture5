@@ -1,20 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8" />
-  <title>Lecture 1 Basics</title>
-
-<script>
-function myFunction() {
-  document.getElementById("demo").innerHTML = "Paragraph changed.";
-}
-</script>
+  <meta charset="UTF-8">
+  <title>Lecture 5 Demo</title>
 </head>
 <body>
-<h2>Demo JavaScript in Head</h2>
 
-<p id="demo">A Paragraph</p>
-<button type="button" onclick="myFunction()">Try it</button>
+<h1 id="title">Hello JavaScript</h1>
+<button onclick="changeTitle()">Click Me</button>
+
+<script>
+  // Variables
+  const greeting = "Welcome!";
+  let count = 0;
+
+  // Function to change HTML content
+  function changeTitle() {
+    count++;
+    document.getElementById("title").innerText = greeting + " You clicked " + count + " times.";
+  }
+</script>
+
+<noscript>
+  <p>JavaScript is disabled. Please enable it to use this page.</p>
+</noscript>
 
 </body>
-</html> 
+</html>

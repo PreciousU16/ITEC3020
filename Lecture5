@@ -6,6 +6,11 @@
 </head>
 <body>
 
+<p>   <a href="index.html"> FIRST PAGE</a>. </p>
+
+  <p> <a href="lec2_practice.html"> SECONd PAGE</a>. </p>
+<p>   <a href="lecture4_demo.html"> Javascript</a>. </p>   
+
 <h1 id="title">Hello JavaScript</h1>
 <button onclick="changeTitle()">Click Me</button>
 

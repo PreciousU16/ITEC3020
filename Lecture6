@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1 id="demo"></h1>
+
+<script>
+function updateMessage(msg) {
+  document.getElementById("demo").innerText = msg;
+}
+
+const operation = (a, b) => a + b;
+
+(function(a, b, op) {
+  let sum = op(a, b);
+  let user = {
+    name: "Alice",
+    age: 25,
+    greet: function() { return "Hello, " + this.name; }
+  };
+  updateMessage(user.greet() + ". Sum is " + sum);
+})(5, 7, operation);
+</script>
+</body>
+</html>
+ 

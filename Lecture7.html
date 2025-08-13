@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <main>
+    <h1 id="main-title">Hello DOM</h1>
+    <p class="para">Paragraph 1</p>
+    <p class="para">Paragraph 2</p>
+  </main>
+
+
+  <a href="lec2_practice.html">Visit another page</a>
+
+    <a href="lecture4_demo.html"> <strong> THIRD PAGE </strong> </a> <br>  
+  <p>   <a href="Lecture5_Practice.html"> Javascript</a>. </p>   
+    <p>   <a href="Lecture6.html"> Javascript</a>. </p>   
+
+   <p>   <a href="index.html"> Javascript</a>. </p>   
+
+  <script>
+    // Change all paragraph colors
+    const paragraphs = document.getElementsByClassName("para");
+    for (const p of paragraphs) {
+      p.style.color = "blue";
+    }
+
+    // Add a new element
+    const newP = document.createElement("p");
+    newP.innerText = "Paragraph 3 (added)";
+    document.querySelector("main").append(newP);
+
+    // Modify heading
+    const heading = document.getElementById("main-title");
+    heading.style.fontSize = "40px";
+    heading.classList.add("highlight");
+  </script>
+</body>
+</html>
 

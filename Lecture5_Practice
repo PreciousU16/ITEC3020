@@ -6,25 +6,24 @@
 </head>
 <body>
 
-<p>   <a href="index.html"> FIRST PAGE</a>. </p>
-
-  <p> <a href="lec2_practice.html"> SECONd PAGE</a>. </p>
-<p>   <a href="lecture4_demo.html"> Javascript</a>. </p>   
+<p><a href="index.html">FIRST PAGE</a></p>
+<p><a href="lec2_practice.html">SECOND PAGE</a></p>
+<p><a href="lecture4_demo.html">Javascript</a></p>   
 
 <h1 id="title">Hello JavaScript</h1>
 <button onclick="changeTitle()">Click Me</button>
 
 <script>
-  // Variables
   const greeting = "Welcome!";
   let count = 0;
 
-  // Function to change HTML content
   function changeTitle() {
     count++;
-    document.getElementById("title").innerText = greeting + " You clicked " + count + " times.";
+    document.getElementById("title").innerText = 
+      greeting + " You clicked " + count + " times.";
   }
 </script>
 
 </body>
 </html>
+    
